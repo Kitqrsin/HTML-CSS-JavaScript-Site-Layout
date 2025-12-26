@@ -1,16 +1,17 @@
 footer {
-    background-color: rgba(184, 114, 169, 0.85); 
     color: #ffffff;
     padding: 40px 20px 20px 20px;
     margin-top: 10em;
     backdrop-filter: blur(5px);
     border-top: 2px solid yellow;
     box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 .footer-container {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0 auto;git
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 30px;
@@ -19,12 +20,12 @@ footer {
 .footer-section h3 {
     margin-bottom: 20px;
     font-size: 1.2rem;
-    color: yellow; 
+    color: yellow;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
 
-.footer-section p, 
+.footer-section p,
 .footer-section ul {
     font-size: 0.95rem;
     line-height: 1.6;
