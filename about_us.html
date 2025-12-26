@@ -16,11 +16,8 @@
 
     <div id="background-animation"></div>
 
-
     <header class="fade-in">
         <nav class="navbar">
-
-
             <a href="index.html" class="logo-badge">
                 <div class="circle">
                     <img src="images/Gemini_Generated_Image_6iwpum6iwpum6iwp.png" alt="Chamillion Logo" class="logo" />
@@ -29,8 +26,7 @@
 
             <ul class="nav-right">
                 <li><a href="/login.html"><i class="fas fa-user"></i> Логин</a></li>
-                <li><a href="/register-profile.html"><i class="fa-solid fa-arrow-right-to-bracket"></i> Регистрация</a>
-                </li>
+                <li><a href="/register-profile.html"><i class="fa-solid fa-arrow-right-to-bracket"></i> Регистрация</a></li>
                 <li><a href="/cart.html"><i class="fas fa-shopping-cart"></i> Количка</a></li>
                 <li><a href="about_us.html">За нас</a></li>
 
@@ -38,16 +34,12 @@
                     <i class="fas fa-search"></i> Търсене
                 </button>
 
-
                 <form id="searchForm" class="search-bar-container" onsubmit="handleSearch(event)">
                     <input type="text" placeholder="Търсене..." name="query">
                     <button type="submit" class="search-btn">Търсене</button>
                     <button type="button" class="close-btn" onclick="toggleSearchBar()">×</button>
                 </form>
             </ul>
-
-
-
         </nav>
     </header>
 
@@ -62,6 +54,32 @@
                 страстта си в собствен уебсайт.</p>
             <p>Надяваме се да се насладите на нашите продукти толкова, колкото ние се радваме да ви ги предлагаме. Ако
                 имате въпроси или коментари, моля не се колебайте да се свържете с нас.</p>
+        </section>
+
+        <section class="about-us">
+            <h2>Нашите Дизайни</h2>
+            <p style="text-align:center; margin-bottom: 20px;">Разгледайте новата ни колекция Pounce.</p>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="images/hoodie.jpg" alt="Pounce Hoodie">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/tshirt.jpg" alt="Pounce T-Shirt">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/leggings.jpg" alt="Floral Leggings">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/jacket.jpg" alt="Pounce Bomber Jacket">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/tote.jpg" alt="Floral Tote Bag">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/hat.jpg" alt="Bucket Hat">
+                </div>
+            </div>
         </section>
 
         <section class="about-us">
@@ -82,8 +100,7 @@
 
                     <div class="form-group">
                         <label for="message">Съобщение:</label>
-                        <textarea id="message" name="message" rows="5" placeholder="Как можем да Ви помогнем?"
-                            required></textarea>
+                        <textarea id="message" name="message" rows="5" placeholder="Как можем да Ви помогнем?" required></textarea>
                     </div>
 
                     <button type="submit" class="submit-btn">Изпрати запитването</button>
@@ -92,44 +109,41 @@
         </section>
     </main>
 
-
-
     <footer class="fade-in">
-    <div class="footer-container">
-      <div class="footer-section">
-        <h3>Контакти</h3>
-        <p><i class="fas fa-envelope"></i> info@pounceshop.com</p>
-        <p><i class="fas fa-phone"></i> +359 888 123 456</p>
-        <p><i class="fas fa-map-marker-alt"></i> гр. Варна, България</p>
-      </div>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Контакти</h3>
+                <p><i class="fas fa-envelope"></i> info@pounceshop.com</p>
+                <p><i class="fas fa-phone"></i> +359 888 123 456</p>
+                <p><i class="fas fa-map-marker-alt"></i> гр. Варна, България</p>
+            </div>
 
-      <div class="footer-section">
-        <h3>Последвайте ни</h3>
-        <div class="social-links">
-          <a href="https://facebook.com/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-          <a href="https://instagram.com/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-          <a href="https://twitter.com/" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-          <a href="https://tiktok.com/" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            <div class="footer-section">
+                <h3>Последвайте ни</h3>
+                <div class="social-links">
+                    <a href="https://facebook.com/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://instagram.com/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com/" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://tiktok.com/" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Полезна информация</h3>
+                <ul class="footer-links">
+                    <li><a href="about_us.html">За нас</a></li>
+                    <li><a href="#">Общи условия</a></li>
+                    <li><a href="#">Доставка и плащане</a></li>
+                    <li><a href="#">Връщане на продукти</a></li>
+                </ul>
+            </div>
         </div>
-      </div>
 
-      <div class="footer-section">
-        <h3>Полезна информация</h3>
-        <ul class="footer-links">
-          <li><a href="about_us.html">За нас</a></li>
-          <li><a href="#">Общи условия</a></li>
-          <li><a href="#">Доставка и плащане</a></li>
-          <li><a href="#">Връщане на продукти</a></li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="footer-bottom">
-      <p>&copy; 2025 PounceShop. Всички права запазени.</p>
-    </div>
-  </footer>
+        <div class="footer-bottom">
+            <p>&copy; 2025 PounceShop. Всички права запазени.</p>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
-
 </html>

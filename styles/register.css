@@ -6,7 +6,6 @@ body {
   flex-direction: column;
 }
 
-/* Center the form vertically and horizontally */
 .register-form {
   display: flex;
   flex-direction: column;
@@ -17,7 +16,6 @@ body {
   margin-top: 3em;
 }
 
-/* Logo on top of the form */
 .logo-badge {
   display: flex;
   justify-content: center;
@@ -45,7 +43,6 @@ body {
   object-fit: contain;
 }
 
-/* Registration form styles */
 .register {
   background: #f3f4f6;
   padding: 2rem 2.5rem;
@@ -102,7 +99,6 @@ body {
   color: #fff;
 }
 
-/* Hide the navbar for this page */
 .navbar {
   display: none !important;
 }
