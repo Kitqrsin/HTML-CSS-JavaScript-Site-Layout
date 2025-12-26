@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PounceShop - Cart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/home_page.css" />
+    <link rel="stylesheet" href="styles/cart.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body class="no-scroll home-page">
+
+    <div id="background-animation"></div>
+
+    <header class="fade-in">
+        <nav class="navbar">
+            <ul class="nav-left">
+                <li><a href="#">Жени</a></li>
+                <li><a href="#">Мъже</a></li>
+                <li><a href="#">Деца</a></li>
+            </ul>
+
+            <a href="base.html" class="logo-badge">
+                <div class="circle">
+                    <img src="images/Gemini_Generated_Image_6iwpum6iwpum6iwp.png" alt="Chamillion Logo" class="logo" />
+                </div>
+            </a>
+
+            <ul class="nav-right">
+                <li><a href="login.html"><i class="fas fa-user"></i> Логин</a></li>
+                <li><a href="register-profile.html"><i class="fa-solid fa-arrow-right-to-bracket"></i> Регистрация</a>
+                </li>
+                <li><a href="cart.html"><i class="fas fa-shopping-cart"></i> Количка</a></li>
+                <li><a href="about_us.html">За нас</a></li>
+                <button class="open-search-btn" onclick="toggleSearchBar()">
+                    <i class="fas fa-search"></i> Търсене
+                </button>
+
+                <form id="searchForm" class="search-bar-container" onsubmit="handleSearch(event)">
+                    <input type="text" placeholder="Търсене..." name="query">
+                    <button type="submit" class="search-btn">Търсене</button>
+                    <button type="button" class="close-btn" onclick="toggleSearchBar()">×</button>
+                </form>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="fade-in">
+        <div class="cart-container">
+            <h1>Количка</h1>
+
+            <div class="cart-item">
+                <img src="https://cdn11.bigcommerce.com/s-jjm7kgkrrc/images/stencil/1280x1280/products/59716/7057134/20321__56131.1735850961.jpg?c=1" alt="Product image" />
+                <div class="cart-item-details">
+                    <div class="cart-item-title">Примерен продукт A</div>
+                    <div class="cart-item-title">Размер: M</div>
+                    <div class="cart-item-title">Вариант: Среден</div>
+                    <div>25 лв</div>
+                    <div class="cart-item-quantity">Количество: <span class="first-item-qty">2</span></div>
+                    <div class="cart-total">Цена: 50 лв</div>
+                </div>
+            </div>
+            <label class="cart-item-title" for="qty-1">Промяна на количество:</label>
+            <select name="quantity" id="qty-1">
+                <option value="" disabled selected>-</option>
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+            </select>
+
+            <div class="cart-item">
+                <img src="https://hourscollection.com/cdn/shop/files/DropShoulderHoodie-Grey-productphoto_1_800x.png?v=1739305890" alt="Product image" />
+                <div class="cart-item-details">
+                    <div class="cart-item-title">Примерен продукт B</div>
+                    <div class="cart-item-title">Размер: L</div>
+                    <div class="cart-item-title">Вариант: Голям</div>
+                    <div>18 лв</div>
+                    <div class="cart-item-quantity">Количество: <span class="second-item-qty">1</span></div>
+                    <div class="cart-total">Цена: 18 лв</div>
+                </div>
+            </div>
+
+            <label class="cart-item-title" for="qty-2">Промяна на количество:</label>
+            <select name="quantity" id="qty-2">
+                <option value="" disabled selected>-</option>
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+            </select>
+
+            <div class="cart-total">Общо: 68 лв</div>
+            <button class="checkout-btn" onclick="location.href='#checkout'">Плащане</button>
+        </div>
+    </main>
+
+    <footer class="fade-in">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>Контакти</h3>
+        <p><i class="fas fa-envelope"></i> info@pounceshop.com</p>
+        <p><i class="fas fa-phone"></i> +359 888 123 456</p>
+        <p><i class="fas fa-map-marker-alt"></i> гр. Варна, България</p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Последвайте ни</h3>
+        <div class="social-links">
+          <a href="https://facebook.com/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://instagram.com/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://twitter.com/" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="https://tiktok.com/" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-section">
+        <h3>Полезна информация</h3>
+        <ul class="footer-links">
+          <li><a href="about_us.html">За нас</a></li>
+          <li><a href="#">Общи условия</a></li>
+          <li><a href="#">Доставка и плащане</a></li>
+          <li><a href="#">Връщане на продукти</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 PounceShop. Всички права запазени.</p>
+    </div>
+  </footer>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

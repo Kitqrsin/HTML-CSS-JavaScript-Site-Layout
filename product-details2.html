@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Product Details - PounceShop</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="styles/styles.css" />
+  <link rel="stylesheet" href="styles/product_details.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body class="no-scroll home-page">
+
+  <div id="background-animation"></div>
+
+  <header class="fade-in">
+    <nav class="navbar">
+      <ul class="nav-left">
+        <li><a href="#">Жени</a></li>
+        <li><a href="#">Мъже</a></li>
+        <li><a href="#">Деца</a></li>
+      </ul>
+
+      <a href="base.html" class="logo-badge">
+        <div class="circle">
+          <img src="images/Gemini_Generated_Image_6iwpum6iwpum6iwp.png" alt="Chamillion Logo" class="logo" />
+        </div>
+      </a>
+
+      <ul class="nav-right">
+        <li><a href="login.html"><i class="fas fa-user"></i> Логин</a></li>
+        <li><a href="register-profile.html"><i class="fa-solid fa-arrow-right-to-bracket"></i> Регистрация</a></li>
+        <li><a href="cart.html"><i class="fas fa-shopping-cart"></i> Количка</a></li>
+        <li><a href="about_us.html">За нас</a></li>
+
+        <button class="open-search-btn" onclick="toggleSearchBar()">
+          <i class="fas fa-search"></i> Търсене
+        </button>
+
+        <form id="searchForm" class="search-bar-container" onsubmit="handleSearch(event)">
+          <input type="text" placeholder="Търсене..." name="query">
+          <button type="submit" class="search-btn">Търсене</button>
+          <button type="button" class="close-btn" onclick="toggleSearchBar()">×</button>
+        </form>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="fade-in">
+    <section class="product-details">
+      <div class="product-image">
+        <img
+          src="https://hourscollection.com/cdn/shop/files/DropShoulderHoodie-Grey-productphoto_1_800x.png?v=1739305890"
+          alt="Product Name" />
+      </div>
+
+      <div class="product-info">
+        <h1>Продукт</h1>
+        <p class="product-price">18 лв</p>
+        <p class="product-description">
+          Това е демонстрационно описание на продукта. Висококачествен материал, удобна кройка, перфектен за всякакъв
+          повод.
+        </p>
+
+        <div class="size-selector">
+          <p>Налични размери:</p>
+          <div class="sizes">
+            <button class="size-btn">S</button>
+            <button class="size-btn" disabled>M (Изчерпана наличност)</button>
+            <button class="size-btn">L</button>
+            <button class="size-btn">XL</button>
+          </div>
+        </div>
+
+        <label for="quantity">Количество:</label>
+        <input type="number" id="quantity" name="quantity" min="1" max="10" value="1">
+
+        <button class="add-to-cart">Добави в количката</button>
+      </div>
+    </section>
+
+
+
+    <section class="reviews-section">
+      <h2 class="review-h2">Ревюта</h2>
+      <button class="add-review-btn">Добави ревю</button>
+      <div class="review">
+        <strong>demo_user</strong>
+        <span>★★★★★</span>
+        <p class="review-p">Страхотен продукт! Много удобен и пасва перфектно.</p>
+      </div>
+
+      <div class="review">
+        <strong>another_user</strong>
+        <span>★★★★☆</span>
+        <p class="review-p">Добро качество. Дойде бързо и както беше описано.</p>
+      </div>
+
+      <div class="review">
+        <strong>happy_customer</strong>
+        <span>★★★★★</span>
+        <p class="review-p">Обичам го! Определено ще поръчам отново.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="fade-in">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>Контакти</h3>
+        <p><i class="fas fa-envelope"></i> info@pounceshop.com</p>
+        <p><i class="fas fa-phone"></i> +359 888 123 456</p>
+        <p><i class="fas fa-map-marker-alt"></i> гр. Варна, България</p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Последвайте ни</h3>
+        <div class="social-links">
+          <a href="https://facebook.com/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://instagram.com/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://twitter.com/" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="https://tiktok.com/" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-section">
+        <h3>Полезна информация</h3>
+        <ul class="footer-links">
+          <li><a href="about_us.html">За нас</a></li>
+          <li><a href="#">Общи условия</a></li>
+          <li><a href="#">Доставка и плащане</a></li>
+          <li><a href="#">Връщане на продукти</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 PounceShop. Всички права запазени.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PounceShop - Home</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="styles/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="no-scroll home-page">
+
+  <div id="background-animation"></div>
+
+  <header class="fade-in">
+
+
+
+    <nav class="navbar">
+      <ul class="nav-left">
+        <li><a href="#">Жени</a></li>
+        <li><a href="#">Мъже</a></li>
+        <li><a href="#">Деца</a></li>
+      </ul>
+
+      <a href="base.html" class="logo-badge">
+        <div class="circle">
+          <img src="images/Gemini_Generated_Image_6iwpum6iwpum6iwp.png" alt="Chamillion Logo" class="logo" />
+        </div>
+      </a>
+
+      <ul class="nav-right">
+        <li><a href="login.html"><i class="fas fa-user"></i> Логин</a></li>
+        <li><a href="register-profile.html"><i class="fa-solid fa-arrow-right-to-bracket"></i> Регистрация</a></li>
+        <li><a href="cart.html"><i class="fas fa-shopping-cart"></i> Количка</a></li>
+        <li><a href="about_us.html">За нас</a></li>
+
+        <button class="open-search-btn" onclick="toggleSearchBar()">
+          <i class="fas fa-search"></i> Търсене
+        </button>
+
+
+        <form id="searchForm" class="search-bar-container" onsubmit="handleSearch(event)">
+          <input type="text" placeholder="Търсене..." name="query">
+          <button type="submit" class="search-btn">Търсене</button>
+          <button type="button" class="close-btn" onclick="toggleSearchBar()">×</button>
+        </form>
+      </ul>
+
+
+
+    </nav>
+  </header>
+
+
+
+  <main class="fade-in">
+    <section class="categories">
+      <div class="category-grid">
+        <div class="category-card">
+          <a href="product-details1.html">
+            <img src="https://shop.edilmac.bg/wp-content/uploads/2019/09/tshirt.jpg" alt="T-Shirts" />
+            <h3>Блуза</h3>
+          </a>
+        </div>
+        <div class="category-card">
+          <a href="product-details2.html">
+            <img
+              src="https://hourscollection.com/cdn/shop/files/DropShoulderHoodie-Grey-productphoto_1_800x.png?v=1739305890"
+              alt="Hoodies" />
+            <h3>Суитшърти</h3>
+          </a>
+        </div>
+
+        <div class="category-card">
+          <a href="product-details3.html">
+            <img
+              src="https://cdn11.bigcommerce.com/s-jjm7kgkrrc/images/stencil/1280x1280/products/59716/7057134/20321__56131.1735850961.jpg?c=1"
+              alt="Bottoms" />
+            <h3>Долнища</h3>
+          </a>
+        </div>
+        <div class="category-card">
+          <a href="product-details4.html">
+            <img
+              src="https://timeland.bg/media/catalog/product/cache/75f8037529a6cfaf0621434105e49151/2/1/2174ygo_damska_zlatna_grivna_blush.jpg"
+              alt="Accessories" />
+            <h3>Аксесоари</h3>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="fade-in">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>Контакти</h3>
+        <p><i class="fas fa-envelope"></i> info@pounceshop.com</p>
+        <p><i class="fas fa-phone"></i> +359 888 123 456</p>
+        <p><i class="fas fa-map-marker-alt"></i> гр. Варна, България</p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Последвайте ни</h3>
+        <div class="social-links">
+          <a href="https://facebook.com/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://instagram.com/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://twitter.com/" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="https://tiktok.com/" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-section">
+        <h3>Полезна информация</h3>
+        <ul class="footer-links">
+          <li><a href="about_us.html">За нас</a></li>
+          <li><a href="#">Общи условия</a></li>
+          <li><a href="#">Доставка и плащане</a></li>
+          <li><a href="#">Връщане на продукти</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 PounceShop. Всички права запазени.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
